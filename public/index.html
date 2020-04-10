@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <div id="clockDiv" class="display-1">
+        <span class="minutes">25</span>
+        :
+        <span class="seconds">00</span>
+      </div>
+      <div id="clockButtons">
+        <button id="start" class="btn" onclick="startTimer()">
+          Start
+        </button>
+        <button id="stop" class="btn">Stop</button>
+      </div>
+
+      <div id="todo">
+        <h2>Todo:</h2>
+        <div id="add-task-container">
+          <div class="form-row">
+            <input
+              type="text"
+              class="form-control"
+              id="enter-task"
+              placeholder="Enter task"
+            />
+            <button class="btn btn-primary" id="btn-add" onclick="addTask()">
+              +
+            </button>
+          </div>
+        </div>
+
+        <ul class="list-group" id="tasks"></div>
+      </div>
+    </div>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
